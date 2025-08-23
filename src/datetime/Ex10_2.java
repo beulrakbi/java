@@ -11,8 +11,8 @@ public class Ex10_2 {
         Calendar date2 = Calendar.getInstance();
 
         //month의 경우 0부터 시작하기 때문에 4월인 경우, 3으로 지정해야 함
-        //date1.set(2019, Calendar.APRIL, 29);와 같이도 지정 가능
-        date1.set(2019, 4, 3); //여기서 month는 4임
+        //date1.set(2019, Calendar.APRIL, 29);와 같이도 지정 가능 << 이 방법 권장
+        date1.set(2019, 4, 29); //여기서 month는 4임
         System.out.println("date1은 " + toString(date1) + DAY_OF_WEEK[date1.get(Calendar.DAY_OF_WEEK)] + "요일이고, ");
         System.out.println("오늘(date2)은" + toString(date2) + DAY_OF_WEEK[date2.get(Calendar.DAY_OF_WEEK)] + "요일입니다.");
 
@@ -27,3 +27,4 @@ public class Ex10_2 {
         return date.get(Calendar.YEAR)+"년 " + (date.get(Calendar.MONTH) + "월 " + date.get(Calendar.DATE) + "일");
     }
 }
+ 
