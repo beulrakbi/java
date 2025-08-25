@@ -19,5 +19,6 @@ public class VariableInitializationExample {
      //int result = value + 10; // value 변수를 초기화 하지 않고 사용할 수 없음
         int result = value1 + 10;
         System.out.println(result);
+        //ㅇ
     }
 }
